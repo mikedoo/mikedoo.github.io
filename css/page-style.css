@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding:0;
+    scroll-behavior: smooth;
+}
+h1{
+    color: rgb(255, 30, 0);
+    font-weight: bold;
+    font-size: 36px; 
+    font-family: 等线;
+    letter-spacing: 3px;
+}
+nav{
+    top: 0;
+    background-image: linear-gradient(rgba(255,255,255,1),rgba(255,255,255,0));
+    width: 100%;
+    position: fixed;
+}
+.navbar{
+    min-width: 800px;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    margin-left: 3%;
+    margin-right: 10%;
+    
+}
+.logo{
+    width: 50px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.navbar ul{
+    min-width: 500px;
+    text-align: right;
+    flex: 1;
+}
+.navbar ul li{   
+    list-style: none;
+    display: inline-block;
+    margin-left: 50px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-family: 等线 ;
+    transition: 0.5s;
+}
+.navbar ul li a:hover{
+    color: rgb(255, 30, 0) ;
+    font-size: 24px;
+}
+h2{
+    color: rgb(0, 0, 0,0.7);
+    font-weight: bold;
+    font-size: 32px; 
+    font-family: STXihei;
+    text-align: center;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+h3{
+    color: rgb(0, 0, 0,);
+    font-weight: bold;
+    font-size: 24px; 
+    font-family: STXihei;
+    text-align: left;
+    letter-spacing: 3px;
+    margin-top: 10px;
+}
+p{
+    color: rgb(0, 0, 0);
+    font-size: 20px; 
+    font-family: STXihei;
+    margin-top: 5px;
+    line-height: 24px;
+}
+.main{
+    margin-right: 5%;
+    margin-left: 3%;
+    display:flex;
+}
+.catalog{
+    flex-basis: 20%;
+    min-width: 230px;
+    width:16%; 
+}
+.catalog div{
+    margin-top: 12vh;
+    position: fixed;
+
+}
+.catalog ul{
+    width: 16vw;
+    min-width: 200px;
+    list-style: none;
+    padding: 10px;
+    border-left: 3px solid rgb(255, 30, 0);
+}
+.catalog ul li a{
+    padding: 10px 10px;
+    line-height: 50px;
+    text-decoration: none;
+    color: rgb(0, 0, 0,0.8);
+    font-weight: bold;
+    font-size: 20px;
+    font-family: STXihei ;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+.catalog ul li a:hover, 
+.catalog ul li a.active{
+    background-color: rgb(255, 30, 0);
+    color: white;
+    transition: 0.5s ease ;
+}
+.catalog ul ul{
+    
+    list-style: none;
+    border-left: none;
+}
+.catalog ul ul li{
+    display: inline-block;
+    padding-left: 10px;
+    line-height: 25px;
+    margin-bottom: 10px;
+    color: rgba(0, 0, 0, 1);
+    font-size: 15px;
+    font-family: STXihei ;
+    letter-spacing: 1px;
+    border-left: 1px solid rgb(255, 30, 0);
+}
+.container{
+    display: inline-block;
+    flex-basis: 80%;
+    min-width: 1000px;
+    box-sizing: border-box;
+    
+}
+section{
+    padding-top:  100px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.project{
+    background-color: white;
+    min-width: 500px;
+    height: 500px;
+    background-color: rgb(255, 30, 0);
+    cursor: pointer;
+    box-sizing: border-box;
+    flex: 1;
+    margin-left: 1.5vw;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    transition: 0.5s;
+}
+.image{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+.image:hover{
+    transform: scale(1.1)
+}
+.image a{
+    text-decoration: none;
+    width: 100%;
+    height: 400px;
+    padding-top: 320px;
+    color: rgb(255, 30, 0);
+    font-size: 30px; 
+    font-family: STXihei;
+    transform: scale(0.5);
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.3s;
+}
+.image a:hover{
+    transform: scale(1);
+    opacity: 1;
+}
