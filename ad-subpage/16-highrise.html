@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Valley</title>
+    <link rel="shortcut icon" href="../image/logo1.png">
+    <link rel="stylesheet" href="../css/subpage.css">
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <a href=""><img src="../image2/高层/高层logo.png" class="logo" ></a>
+            <h1 style="margin-left: 10px;">绿谷 Green Valley</h1>
+            <ul>
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="../architecture-design.html">建筑设计作品</a></li>
+                <li><a href="../art-work.html">艺术作品</a></li>
+                <li><a href="../about.html">关于</a></li>
+            </ul>   
+        </div>
+    </nav>
+    <div class="banner" style="background-image: url(../image/高层.jpg);">
+    </div>
+    <div class="describe">
+        <h2>绿谷 Green Valley</h2>
+        <h3>高层商务办公建筑设计</h3>
+        <div class="info-row">
+            <div>
+                <h4>位置</h4><span>:</span>
+                <p>成都市人民北路</p>
+            </div>
+            <div>
+                <h4>面积规模</h4><span>:</span>
+                <p>49840M<sup>2</sup></p>
+            </div>
+            <div>
+                <h4>设计时间</h4><span>:</span>
+                <p>2022年4月至2022年6月</p>
+            </div>
+            <div style="border-bottom: 1px solid rgb(255, 30, 0);">
+                <h4>设计团队</h4><span>:</span>
+                <p>杜明轩、潘宇宁</p>
+            </div>
+        </div>
+        <p>本案场地位于成都市人民北路交叉口，限高100米。由于场地位于一环内城市核心区域的道路交叉口，其形态对于城市环境和景观影响巨大，因此如何在此地块内打造一栋具有成都特色并且具有辨识性、地标性的商业办公高层综合体建筑成为该设计的主要目标。最大的挑战在其于限高100米，而场地周围存在多栋100米以上的建筑，如何在小于100米的高度内塑造一个空间丰富，形态独特的体量？我们解决之道为通过形体的切割、扭转、加法等手段塑造丰富的空间。 </p>
+        <p>在概念上，为了契合成都市“公园城市”的发展战略，提出打造开放绿色的办公空间的概念：呼应城市景观绿化、将景观绿化通过引入高层办公空间中。为了呼应成都的地域文化，本案将传统的庭院空间、檐廊空间和林盘空间转译为空中花园、露台休息空间、裙房庭院、外廊式裙房商业，将传统与现代结合。此外，在表皮玻璃幕墙的处理上也将瓦屋面的肌理进行抽象，转译为内凹的弧面波浪型幕墙，在立面形成丰富的肌理变化。 </p>
+        <p>在绿建手段上，根据成都的气候条件，结合上述的设计概念，在裙房设置的庭院有利于改善通风；在核心筒设置拔风中庭用于热压通风，改善高层建筑核心筒通风条件差的问题；此外，架空层的设置也有助于风压通风；在东西两侧立面上向内凹陷，增大办公空间的自然采光面；东西立面的幕墙为折线型幕墙，在保证采光的同时，防止西晒，同时还能带来丰富的立面肌理。</p>
+    </div>
+    <div class="container">
+        <div class="img-container">
+            <img src="../image2/高层/鸟瞰.jpg" alt="鸟瞰图" onclick="openViewer();curentImg(1)" >
+            <div class="desc">鸟瞰图</div>    
+        </div>
+        <div class="img-container">
+            <img src="../image2/高层/裙房透视.jpg" alt="" onclick="openViewer();curentImg(2)">
+            <div class="desc">裙房</div> 
+        </div>
+        <div class="img-container">
+            <img src="../image2/高层/东立面透视.jpg" alt="" onclick="openViewer();curentImg(3)">
+            <div class="desc">东立面</div>    
+        </div>
+        <div class="img-container">
+            <img src="../image2/高层/西立面透视.jpg" alt="" onclick="openViewer();curentImg(4)">
+            <div class="desc">西立面</div>    
+        </div>
+        <div class="img-container">
+            <img src="../image2/高层/作品集_页面_17.jpg" alt="" onclick="openViewer();curentImg(5)">
+            <div class="desc">图纸1</div>    
+        </div>
+        <div class="img-container">
+            <img src="../image2/高层/作品集_页面_18.jpg" alt="" onclick="openViewer();curentImg(6)">
+            <div class="desc">图纸2</div>    
+        </div>
+        <div class="img-container">
+            <img src="../image2/高层/作品集_页面_19.jpg" alt="" onclick="openViewer();curentImg(7)">
+            <div class="desc">图纸3</div>    
+        </div>
+        <div class="img-container">
+            <img src="../image2/高层/作品集_页面_20.jpg" alt="" onclick="openViewer();curentImg(8)">
+            <div class="desc">图纸4</div>    
+        </div>
+        <div class="img-container">
+            <img src="../image2/高层/作品集_页面_21.jpg" alt="" onclick="openViewer();curentImg(9)">
+            <div class="desc">图纸5</div>    
+        </div>
+    </div>
+    <!--图片查看视窗-->
+    <div id="viewer" >
+        <div class="viewer-content">
+            <div class="vheader">
+                 <!--图片编号-->
+                <span id="numtext"></span>
+                <a class="prev" onclick="changeImg(-1)">&#10094;</a>
+                <a class="next" onclick="changeImg(1)">&#10095;</a>
+                <span class="close" onclick="closeViewer()">&times;</span>
+            </div>
+            <div class="vdody">
+                <div class="imgslide" data-numtext="1/11">
+                    <img src="../image2/林盘/小学改造鸟瞰.jpg" alt="" >
+                </div>
+                <div class="imgslide" data-numtext="2/11">
+                    <img src="../image2/林盘/小学改造鸟瞰2.jpg" alt="" >
+                </div>
+                <div class="imgslide" data-numtext="3/11">
+                    <img src="../image2/林盘/小学改造入口透视.jpg" alt="" >
+                </div>
+                <div class="imgslide" data-numtext="4/11">
+                    <img src="../image2/林盘/小学改造舞台透视.jpg" alt="">
+                </div>
+                <div class="imgslide" data-numtext="5/11">
+                    <img src="../image2/林盘/小学改造舞台透视2.jpg" alt="">
+                </div>
+                <div class="imgslide" data-numtext="6/11">
+                    <img src="../image2/林盘/小学改造水池透视.jpg" alt="">
+                </div>
+                <div class="imgslide" data-numtext="7/11">
+                    <img src="../image2/林盘/小学改造庭院透视.jpg" alt="">
+                </div>
+                <div class="imgslide" data-numtext="8/11">
+                    <img src="../image2/林盘/小学改造庭院透视2.jpg" alt="">
+                </div>
+                <div class="imgslide" data-numtext="9/11">
+                    <img src="../image2/林盘/作品集_页面_04.jpg" alt="">
+                </div>
+                <div class="imgslide" data-numtext="10/11">
+                    <img src="../image2/林盘/作品集_页面_05.jpg" alt="">
+                </div>
+                <div class="imgslide" data-numtext="11/11">
+                    <img src="../image2/林盘/作品集_页面_05.jpg" alt="">
+                </div>
+
+            </div>
+            <div class="vfooter">
+                <span id="caption"></span>
+            </div>
+        </div>
+    </div>
+    <script src="../js/subpage.js"></script>
+    
+</body>
+</html>

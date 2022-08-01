@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Urbtopia</title>
+    <link rel="shortcut icon" href="../image/logo1.png">
+    <link rel="stylesheet" href="../css/subpage.css">
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <a href=""><img src="../image2/urbtopia/谷雨杯logo.png" class="logo" ></a>
+            <h1 style="margin-left: 10px;">The Urbtopia</h1>
+            <ul>
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="../architecture-design.html">建筑设计作品</a></li>
+                <li><a href="../art-work.html">艺术作品</a></li>
+                <li><a href="../about.html">关于</a></li>
+            </ul>   
+        </div>
+    </nav>
+    <div class="banner" style="background-image: url(../image/谷雨杯.jpg);">
+    </div>
+    <div class="describe">
+        <h2>The Urbtopia</h2>
+        <h3>后疫情时代背景下的城市折叠综合体设计</h3>
+        <div class="info-row">
+            <div>
+                <h4>位置</h4><span>:</span>
+                <p>成都市玉林街区</p>
+            </div>
+            <div>
+                <h4>面积规模</h4><span>:</span>
+                <p>3000M<sup>2</sup></p>
+            </div>
+            <div>
+                <h4>设计时间</h4><span>:</span>
+                <p>2021年7月至2021年8月</p>
+            </div>
+            <div>
+                <h4>设计团队</h4><span>:</span>
+                <p>杜明轩、阎凤怡、张李星月、陈峰</p>
+            </div>
+            <div style="border-bottom: 1px solid rgb(255, 30, 0);">
+                <h4>获奖</h4><span>:</span>
+                <p>“2021谷雨杯全国大学生可持续建筑设计竞赛”优秀奖</p>
+            </div>
+        </div>
+        <p>工业革命和信息革命的浪潮推动社会不断发展，生产生活方式急剧变化，一切都在新旧之间博弈与转换。那些桎梏和壁垒被打破了，同时那些永恒与经典也在接受着挑战。人们的生活不再是简单的线性活动。机器和网络的出现，使得生活如同液体，不断流动不断渗透。
+            我们在疫情中，居家隔离、办公、网课……被迫进行了一次单一空间多种功能转换的尝试。就像水在固液气三态间循环，不断改变状态。紧急的公共卫生事件使我们不断反思着城市所存在的问题以及可能的发展方向。我们在过往的探索中寻求灵感，以构成主义推崇的社会冷凝器为原型，做出新的拓展和延申，尝试回应今天城市生活所暴露出的问题。我们期待足不出户的便捷，但不期待围困在墙内的无助；我们需要彼此重视的安全，但不需要无可奈何的阻隔；我们希望缩短不必要的距离，但不希望错过美好的风景。社会冷凝器是转化生活习惯的装置，在社会冷凝器中，能够完成居住，生产，智力体力劳动等各种社会活动。以此为原型，将社会生活划分为居住、工作和休闲三大部分，在保证彼此独立运作的前提下，相互融合打造新型液态化的人居环境。、
+        </p>
+    </div>
+    <div class="container">
+        <div class="img-container">
+            <img src="../image2/urbtopia/鸟瞰.jpg" alt="鸟瞰图" onclick="openViewer();curentImg(1)" >
+            <div class="desc">鸟瞰图</div>    
+        </div>
+        <div class="img-container">
+            <img src="../image2/urbtopia/透视2.jpg" alt="" onclick="openViewer();curentImg(2)">
+            <div class="desc">人视1</div> 
+        </div>
+        <div class="img-container">
+            <img src="../image2/urbtopia/透视3.jpg" alt="" onclick="openViewer();curentImg(3)">
+            <div class="desc">人视2</div>    
+        </div>
+        <div class="img-container">
+            <img src="../image2/urbtopia/景观平台透视.jpg" alt="" onclick="openViewer();curentImg(4)">
+            <div class="desc">景观平台透视</div>    
+        </div>
+        <div class="img-container">
+            <img src="../image2/urbtopia/西立面透视.jpg" alt="" onclick="openViewer();curentImg(5)">
+            <div class="desc">西立面透视1</div>    
+        </div>
+        <div class="img-container">
+            <img src="../image2/urbtopia/西立面透视2.jpg" alt="" onclick="openViewer();curentImg(6)">
+            <div class="desc">西立面透视2</div>    
+        </div>
+        <div class="img-container">
+            <img src="../image2/urbtopia/中庭透视.jpg" alt="" onclick="openViewer();curentImg(7)">
+            <div class="desc">中庭透视1</div>    
+        </div>
+        <div class="img-container">
+            <img src="../image2/urbtopia/中庭透视2.jpg" alt="" onclick="openViewer();curentImg(8)">
+            <div class="desc">中庭透视2</div>    
+        </div>
+        <div class="img-container">
+            <img src="../image2/urbtopia/The Urbtopia 1.jpg" alt="" onclick="openViewer();curentImg(9)">
+            <div class="desc">图纸一</div>    
+        </div>
+        <div class="img-container">
+            <img src="../image2/urbtopia/The Urbtopia 2.jpg" alt="" onclick="openViewer();curentImg(10)">
+            <div class="desc">图纸二</div>    
+        </div>
+    </div>
+    <!--图片查看视窗-->
+    <div id="viewer" >
+        <div class="viewer-content">
+            <div class="vheader">
+                 <!--图片编号-->
+                <span id="numtext"></span>
+                <a class="prev" onclick="changeImg(-1)">&#10094;</a>
+                <a class="next" onclick="changeImg(1)">&#10095;</a>
+                <span class="close" onclick="closeViewer()">&times;</span>
+            </div>
+            <div class="vdody">
+                <div class="imgslide" data-numtext="1/10">
+                    <img src="../image2/urbtopia/鸟瞰.jpg" alt="" >
+                </div>
+                <div class="imgslide" data-numtext="2/10">
+                    <img src="../image2/urbtopia/透视2.jpg" alt="" >
+                </div>
+                <div class="imgslide" data-numtext="3/10">
+                    <img src="../image2/urbtopia/透视3.jpg" alt="" >
+                </div>
+                <div class="imgslide" data-numtext="4/10">
+                    <img src="../image2/urbtopia/景观平台透视.jpg" alt="">
+                </div>
+                <div class="imgslide" data-numtext="5/10">
+                    <img src="../image2/urbtopia/西立面透视.jpg" alt="">
+                </div>
+                <div class="imgslide" data-numtext="6/10">
+                    <img src="../image2/urbtopia/西立面透视2.jpg" alt="">
+                </div>
+                <div class="imgslide" data-numtext="7/10">
+                    <img src="../image2/urbtopia/中庭透视.jpg" alt="">
+                </div>
+                <div class="imgslide" data-numtext="8/10">
+                    <img src="../image2/urbtopia/中庭透视2.jpg" alt="">
+                </div>
+                <div class="imgslide" data-numtext="9/10">
+                    <img src="../image2/urbtopia/The Urbtopia 1.jpg" alt="">
+                </div>
+                <div class="imgslide" data-numtext="10/10">
+                    <img src="../image2/urbtopia/The Urbtopia 2.jpg" alt="">
+            </div>
+            <div class="vfooter">
+                <span id="caption"></span>
+            </div>
+        </div>
+    </div>
+    <script src="../js/subpage.js"></script>
+    
+</body>
+</html>
