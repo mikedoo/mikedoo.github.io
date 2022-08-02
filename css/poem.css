@@ -1,0 +1,37 @@
+.poemcard{
+    min-width: 500px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 30, 0);
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-left: 2vw;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    padding: 20px;
+    transition: 0.5s;
+}
+.poemcard:hover{
+    transform: scale(1.1);
+}
+.poem{
+    margin:20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    column-count: 1;
+    column-width: 450px;
+    column-fill: auto;
+    column-gap: 100px;
+    height: 100%;
+    width: 1;
+}
+h4{
+    background-color: rgb(255, 30, 0);
+    color: white;
+    line-height: 30px;
+    font-size: 22px;
+    font-family: 等线 ;
+}
+.poem p{
+    font-size: 18px;
+    line-height: 30px;
+}
