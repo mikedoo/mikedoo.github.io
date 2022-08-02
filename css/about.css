@@ -3,6 +3,12 @@
     padding:0;
     scroll-behavior: smooth;
 }
+body{
+    background-image:radial-gradient(rgba(255, 255, 255, 1),rgba(255, 255, 255, 0.8)), 
+    url(/image/IMG_20190812_103415.jpg);
+    background-position: center;
+    background-size: cover;
+}
 h1{
     color: rgb(255, 30, 0);
     font-weight: bold;
