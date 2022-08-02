@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>城市表情</title>
+    <link rel="shortcut icon" href="../image/logo1.png">
+    <link rel="stylesheet" href="../css/subpage.css">
+    <style>
+        .container{
+            margin-top: 12vh;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <a href=""><img src="../image/logo1.png" class="logo" ></a>
+            <h1 style="margin-left: 10px;">城市表情</h1>
+            <ul>
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="../architecture-design.html">建筑设计作品</a></li>
+                <li><a href="../art-work.html">艺术作品</a></li>
+                <li><a href="../about.html">关于</a></li>
+            </ul>   
+        </div>
+    </nav>
+    <div class="container">
+        <div class="img-container">
+            <img src="../image3/拼贴成都/MG_8000.jpg" alt="" onclick="openViewer();curentImg(1)" >
+            <div class="desc">In Rush</div>    
+        </div>
+        <div class="img-container">
+            <img src="../image3/拼贴成都/MG_8049.jpg" alt="" onclick="openViewer();curentImg(2)">
+            <div class="desc">建设中</div> 
+        </div>
+        <div class="img-container">
+            <img src="../image3/拼贴成都/MG_8065.jpg" alt="" onclick="openViewer();curentImg(3)">
+            <div class="desc">荒野</div>    
+        </div>
+        <div class="img-container">
+            <img src="../image3/拼贴成都/MG_80671.jpg" alt="" onclick="openViewer();curentImg(4)">
+            <div class="desc">郊区</div>    
+        </div>
+        <div class="img-container">
+            <img src="../image3/拼贴成都/MG_8258.jpg" alt="" onclick="openViewer();curentImg(5)">
+            <div class="desc">泡桐树街</div>    
+        </div>
+        <div class="img-container">
+            <img src="../image3/拼贴成都/MG_8270.jpg" alt="" onclick="openViewer();curentImg(6)">
+            <div class="desc">作画</div>    
+        </div>
+        <div class="img-container">
+            <img src="../image3/拼贴成都/MG_8275.jpg" alt="" onclick="openViewer();curentImg(7)">
+            <div class="desc">巷子</div>    
+        </div>
+        <div class="img-container">
+            <img src="../image3/拼贴成都/MG_8278.jpg" alt="" onclick="openViewer();curentImg(8)">
+            <div class="desc">巷子</div>    
+        </div>
+        <div class="img-container">
+            <img src="../image3/拼贴成都/MG_8284.jpg" alt="" onclick="openViewer();curentImg(9)">
+            <div class="desc">商店</div>    
+        </div>
+        <div class="img-container">
+            <img src="../image3/拼贴成都/MG_8359.jpg" alt="" onclick="openViewer();curentImg(10)">
+            <div class="desc">门口</div>    
+        </div>
+        <div class="img-container">
+            <img src="../image3/拼贴成都/MG_8366.jpg" alt="" onclick="openViewer();curentImg(11)">
+            <div class="desc">奎星楼街</div>    
+        </div>
+        <div class="img-container">
+            <img src="../image3/拼贴成都/MG_8384.jpg" alt="" onclick="openViewer();curentImg(12)">
+            <div class="desc">骑车的人们</div>    
+        </div>
+        <div class="img-container">
+            <img src="../image3/拼贴成都/MG_8427.jpg" alt="" onclick="openViewer();curentImg(13)">
+            <div class="desc">人民公园</div>    
+        </div>
+        <div class="img-container">
+            <img src="../image3/拼贴成都/MG_8428.jpg" alt="" onclick="openViewer();curentImg(14)">
+            <div class="desc">人民公园</div>    
+        </div>
+        <div class="img-container">
+            <img src="../image3/拼贴成都/MG_8435.jpg" alt="" onclick="openViewer();curentImg(15)">
+            <div class="desc">公交车</div>    
+        </div>
+        <div class="img-container">
+            <img src="../image3/拼贴成都/MG_8439.jpg" alt="" onclick="openViewer();curentImg(16)">
+            <div class="desc">擦玻璃的工人</div> 
+        </div>
+    </div>
+    <!--图片查看视窗-->
+    <div id="viewer" >
+        <div class="viewer-content">
+            <div class="vheader">
+                 <!--图片编号-->
+                <span id="numtext"></span>
+                <a class="prev" onclick="changeImg(-1)">&#10094;</a>
+                <a class="next" onclick="changeImg(1)">&#10095;</a>
+                <span class="close" onclick="closeViewer()">&times;</span>
+            </div>
+            <div class="vdody">
+                <div class="imgslide" data-numtext="1/16">
+                    <img src="../image3/拼贴成都/MG_8000.jpg" alt="" >
+                </div>
+                <div class="imgslide" data-numtext="2/16">
+                    <img src="../image3/拼贴成都/MG_8049.jpg" alt="" >
+                </div>
+                <div class="imgslide" data-numtext="3/16">
+                    <img src="../image3/拼贴成都/MG_8065.jpg" alt="" >
+                </div>
+                <div class="imgslide" data-numtext="4/16">
+                    <img src="../image3/拼贴成都/MG_80671.jpg" alt="">
+                </div>
+                <div class="imgslide" data-numtext="5/16">
+                    <img src="../image3/拼贴成都/MG_8258.jpg" alt="">
+                </div>
+                <div class="imgslide" data-numtext="6/16">
+                    <img src="../image3/拼贴成都/MG_8270.jpg" alt="">
+                </div>
+                <div class="imgslide" data-numtext="7/16">
+                    <img src="../image3/拼贴成都/MG_8275.jpg" alt="">
+                </div>
+                <div class="imgslide" data-numtext="8/16">
+                    <img src="../image3/拼贴成都/MG_8278.jpg" alt="">
+                </div>
+                <div class="imgslide" data-numtext="9/16">
+                    <img src="../image3/拼贴成都/MG_8284.jpg" alt="">
+                </div>
+                <div class="imgslide" data-numtext="10/16">
+                    <img src="../image3/拼贴成都/MG_8359.jpg" alt="">
+                </div>
+                <div class="imgslide" data-numtext="11/16">
+                    <img src="../image3/拼贴成都/MG_8366.jpg" alt="">
+                </div>
+                <div class="imgslide" data-numtext="12/16">
+                    <img src="../image3/拼贴成都/MG_8384.jpg" alt="">
+                </div>
+                <div class="imgslide" data-numtext="13/16">
+                    <img src="../image3/拼贴成都/MG_8427.jpg" alt="">
+                </div>
+                <div class="imgslide" data-numtext="14/16">
+                    <img src="../image3/拼贴成都/MG_8428.jpg" alt="">
+                </div>
+                <div class="imgslide" data-numtext="15/16">
+                    <img src="../image3/拼贴成都/MG_8435.jpg" alt="">
+                </div>
+                <div class="imgslide" data-numtext="16/16">
+                    <img src="../image3/拼贴成都/MG_8439.jpg" alt="">
+                </div>
+            </div>
+            <div class="vfooter">
+                <span id="caption"></span>
+            </div>
+        </div>
+    </div>
+    <script src="../js/subpage.js"></script>
+    
+</body>
+</html>
