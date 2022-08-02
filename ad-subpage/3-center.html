@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowing Water</title>
+    <link rel="shortcut icon" href="../image/logo1.png">
+    <link rel="stylesheet" href="../css/subpage.css">
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <a href=""><img src="../image2/活动中心/活动中心logo.png" class="logo" ></a>
+            <h1 style="margin-left: 10px;">Flowing Water</h1>
+            <ul>
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="../architecture-design.html">建筑设计作品</a></li>
+                <li><a href="../art-work.html">艺术作品</a></li>
+                <li><a href="../about.html">关于</a></li>
+            </ul>   
+        </div>
+    </nav>
+    <div class="banner" style="background-image: url(../image/大学生活动中心.jpg);">
+    </div>
+    <div class="describe">
+        <h2>Flowing Water</h2>
+        <h3>大学生活动中心设计</h3>
+        <div class="info-row">
+            <div>
+                <h4>位置</h4><span>:</span>
+                <p>西南交通大学犀浦校区</p>
+            </div>
+            <div>
+                <h4>面积规模</h4><span>:</span>
+                <p>10285M<sup>2</sup></p>
+            </div>
+            <div>
+                <h4>设计时间</h4><span>:</span>
+                <p>2020年3月至2020年4月</p>
+            </div>
+            <div style="border-bottom: 1px solid rgb(255, 30, 0);">
+                <h4>设计团队</h4><span>:</span>
+                <p>杜明轩</p>
+            </div>
+        </div>
+        <p>本设计以“流动性”为出发点，用人的活动模拟流水，用“流水”冲刷场地从而形成学生活动中心的体量。来自四面八方的“活水”注入，激活了整块场地，让这里成为交流碰撞的场所。为充分利用整块场地，设计者减少建筑层数平摊功能体块，并将活动中心和问文教区融为一体，这样同时也消除了人视点的直观体量，营造了亲切感。在此基础上，通过覆土的方式在建筑屋顶形成新的绿地，在融入场地的同时为校内师生提供一个新的活动平台。
+            调研结果显示，同学们希望能够提供一条由生活区通往教学区的捷径；同学们希望在文教区多提供一些自习的空间以及休闲娱乐的空间；同学们希望活动中心拥有活跃亲切的氛围。在设计中，设计者参考了以上调研结果进行总图设计和功能排布。
+        </p>
+    </div>
+    <div class="container">
+        <div class="img-container">
+            <img src="../image2/活动中心/大透.jpg" alt="鸟瞰图" onclick="openViewer();curentImg(1)" >
+            <div class="desc">鸟瞰图</div>    
+        </div>
+        <div class="img-container">
+            <img src="../image2/活动中心/内透1.jpg" alt="" onclick="openViewer();curentImg(2)">
+            <div class="desc">庭院</div> 
+        </div>
+        <div class="img-container">
+            <img src="../image2/活动中心/内透2.jpg" alt="" onclick="openViewer();curentImg(3)">
+            <div class="desc">餐厅</div>    
+        </div>
+        <div class="img-container">
+            <img src="../image2/活动中心/内透3.jpg" alt="" onclick="openViewer();curentImg(4)">
+            <div class="desc">展厅</div>    
+        </div>
+        <div class="img-container">
+            <img src="../image2/活动中心/内透4.jpg" alt="" onclick="openViewer();curentImg(5)">
+            <div class="desc">图书馆</div>    
+        </div>
+        <div class="img-container">
+            <img src="../image2/活动中心/活动中心正图1.jpg" alt="" onclick="openViewer();curentImg(6)">
+            <div class="desc">图纸1</div>    
+        </div>
+        <div class="img-container">
+            <img src="../image2/活动中心/活动中心正图2.jpg" alt="" onclick="openViewer();curentImg(7)">
+            <div class="desc">图纸2</div>    
+        </div>
+        <div class="img-container">
+            <img src="../image2/活动中心/活动中心正图3.jpg" alt="" onclick="openViewer();curentImg(8)">
+            <div class="desc">图纸3</div>    
+        </div>
+        <div class="img-container">
+            <img src="../image2/活动中心/活动中心正图4.jpg" alt="" onclick="openViewer();curentImg(9)">
+            <div class="desc">图纸4</div>    
+        </div>
+    </div>
+    <!--图片查看视窗-->
+    <div id="viewer" >
+        <div class="viewer-content">
+            <div class="vheader">
+                 <!--图片编号-->
+                <span id="numtext"></span>
+                <a class="prev" onclick="changeImg(-1)">&#10094;</a>
+                <a class="next" onclick="changeImg(1)">&#10095;</a>
+                <span class="close" onclick="closeViewer()">&times;</span>
+            </div>
+            <div class="vdody">
+                <div class="imgslide" data-numtext="1/9">
+                    <img src="../image2/活动中心/大透.jpg" alt="" >
+                </div>
+                <div class="imgslide" data-numtext="2/9">
+                    <img src="../image2/活动中心/内透1.jpg" alt="" >
+                </div>
+                <div class="imgslide" data-numtext="3/9">
+                    <img src="../image2/活动中心/内透2.jpg" alt="" >
+                </div>
+                <div class="imgslide" data-numtext="4/9">
+                    <img src="../image2/活动中心/内透3.jpg" alt="">
+                </div>
+                <div class="imgslide" data-numtext="5/9">
+                    <img src="../image2/活动中心/内透4.jpg" alt="">
+                </div>
+                <div class="imgslide" data-numtext="6/9">
+                    <img src="../image2/活动中心/活动中心正图1.jpg" alt="">
+                </div>
+                <div class="imgslide" data-numtext="7/9">
+                    <img src="../image2/活动中心/活动中心正图2.jpg" alt="">
+                </div>
+                <div class="imgslide" data-numtext="8/9">
+                    <img src="../image2/活动中心/活动中心正图3.jpg" alt="">
+                </div>
+                <div class="imgslide" data-numtext="9/9">
+                    <img src="../image2/活动中心/活动中心正图4.jpg" alt="">
+                </div>
+            </div>
+            <div class="vfooter">
+                <span id="caption"></span>
+            </div>
+        </div>
+    </div>
+    <script src="../js/subpage.js"></script>
+    
+</body>
+</html>

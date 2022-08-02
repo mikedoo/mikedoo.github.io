@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三折宅</title>
+    <link rel="shortcut icon" href="../image/logo1.png">
+    <link rel="stylesheet" href="../css/subpage.css">
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <a href=""><img src="../image2/别墅/别墅logo.png" class="logo" ></a>
+            <h1 style="margin-left: 10px;">三折宅</h1>
+            <ul>
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="../architecture-design.html">建筑设计作品</a></li>
+                <li><a href="../art-work.html">艺术作品</a></li>
+                <li><a href="../about.html">关于</a></li>
+            </ul>   
+        </div>
+    </nav>
+    <div class="banner" style="background-image: url(../image/1+1住宅.jpg);">
+    </div>
+    <div class="describe">
+        <h2>三折宅</h2>
+        <h3>“1+1”底商住宅设计</h3>
+        <div class="info-row">
+            <div>
+                <h4>位置</h4><span>:</span>
+                <p>虚拟场地</p>
+            </div>
+            <div>
+                <h4>面积规模</h4><span>:</span>
+                <p>451.5M<sup>2</sup></p>
+            </div>
+            <div>
+                <h4>设计时间</h4><span>:</span>
+                <p>2019年11月至2019年12月</p>
+            </div>
+            <div style="border-bottom: 1px solid rgb(255, 30, 0);">
+                <h4>设计团队</h4><span>:</span>
+                <p>杜明轩</p>
+            </div>
+        </div>
+        <p>本设计的场地是在一条虚拟的街区：紧邻的联排住宅东西排列，北侧是挡土墙，每栋住宅的用地限制在面宽12m、进深16m的区域内。限高21m。功能要求是“1+1”——底层商业+一户或多户住宅，需要在相邻两栋住宅之间形成共享空间。
+        </p>
+        <p>由于基地的采光条件严苛，为保证建筑内部充足采光，方案运用了合院利用中庭采光的形式，并将住宅空间分为三个合院，形成三个合院+底商的格局，然后把它们在垂直方向上进行折叠，将三个庭院空降在垂直方向上进行空间串联。并运用形体切割的手法，形成退台和缝隙，进一步优化采光，这种折叠关系生成了两个面积较大的屋顶花园和在二层的贯通左右户的共享平台。
+        </p>
+    </div>
+    <div class="container">
+        <div class="img-container">
+            <img src="../image2/别墅/xr1.jpg" alt="鸟瞰图" onclick="openViewer();curentImg(1)" >
+            <div class="desc">鸟瞰图</div>    
+        </div>
+        <div class="img-container">
+            <img src="../image2/别墅/正图1.jpg" alt="" onclick="openViewer();curentImg(2)">
+            <div class="desc">图纸一</div> 
+        </div>
+        <div class="img-container">
+            <img src="../image2/别墅/正图2.jpg" alt="" onclick="openViewer();curentImg(3)">
+            <div class="desc">图纸二</div>    
+        </div>
+    </div>
+    <!--图片查看视窗-->
+    <div id="viewer" >
+        <div class="viewer-content">
+            <div class="vheader">
+                 <!--图片编号-->
+                <span id="numtext"></span>
+                <a class="prev" onclick="changeImg(-1)">&#10094;</a>
+                <a class="next" onclick="changeImg(1)">&#10095;</a>
+                <span class="close" onclick="closeViewer()">&times;</span>
+            </div>
+            <div class="vdody">
+                <div class="imgslide" data-numtext="1/3">
+                    <img src="../image2/别墅/xr1.jpg" alt="" >
+                </div>
+                <div class="imgslide" data-numtext="2/3">
+                    <img src="../image2/别墅/正图1.jpg" alt="" >
+                </div>
+                <div class="imgslide" data-numtext="3/3">
+                    <img src="../image2/别墅/正图2.jpg" alt="" >
+                </div>
+            </div>
+            <div class="vfooter">
+                <span id="caption"></span>
+            </div>
+        </div>
+    </div>
+    <script src="../js/subpage.js"></script>
+    
+</body>
+</html>
